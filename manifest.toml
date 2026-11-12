@@ -1,0 +1,22 @@
+[plugin]
+name = "HypeBot"
+handle = "hypebot"
+description = "A little robot that sits on top of your message bar and reacts to the story"
+tags = ["fun", "utility", "llm-completion"]
+author = "crux"
+version = "0.1.0"
+# The plugin API this is built for, which is the version of `lorealm-plugin` in
+# Cargo.toml. A server only runs plugins built for its own.
+api = "0.1.0"
+permissions = ["chat:read"]
+
+[structure]
+backend = "target/wasm32-wasip2/release/hypebot.wasm"
+
+[build]
+backend = ["cargo", "build", "--release", "--target", "wasm32-wasip2"]
+
+[[frontend.slots]]
+slot = "composer"
+entry = "composer.html"
+title = "HypeBot"
