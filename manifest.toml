@@ -8,7 +8,7 @@ version = "0.1.0"
 # The plugin API this is built for, which is the version of `lorealm-plugin` in
 # Cargo.toml. A server only runs plugins built for its own.
 api = "0.1.0"
-permissions = ["chat:read"]
+permissions = ["chat:read", "model:generate"]
 
 [structure]
 backend = "target/wasm32-wasip2/release/hypebot.wasm"
