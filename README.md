@@ -1,5 +1,8 @@
 # HypeBot
 
+> NOTE: This is an example plugin for [Lorealm](https://github.com/Lorealm/Lorealm).
+> It's a good starting point if you're looking for examples.
+
 A little robot that sits on top of your message bar and reacts to the story
 
 ## Developing
